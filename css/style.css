@@ -25,6 +25,7 @@ h1{
   width: 12%;
   aspect-ratio: 1/1;
   background-color: var(--clr-secondary);
+  transition: all .5s ease-out;
 }
 
 .box.bg-ter{
@@ -38,3 +39,32 @@ h1{
 .box.bg-qui{
   background-color: var(--clr-quinary);
 }
+
+.box:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: brightness(120%);
+  box-shadow: 0px 0px 5px lightgray;
+  animation-name: rotation;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0%{
+    transform: scale(1.2);
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: scale(1.2);
+    transform: rotate(360deg);
+  }
+}
+
+/* PER FARE RUOTARE I BOX AL CLICK DEL BOX, SERVE A SCRIPT.JS
+.box.animation{
+  animation-name: rotation;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+}
+*/

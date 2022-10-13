@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+
 for (let i = 1; i <= 100; i++){
   const box = document.createElement('div');
   box.classList = "box";
@@ -17,3 +18,16 @@ for (let i = 1; i <= 100; i++){
 
   container.append(box);
 };
+
+/* PER FARE RUOTARE I BOX AL CLICK DEL BOX, FUNZIONA 
+
+const boxClickList = document.querySelectorAll(".box");
+boxClickList.forEach(box => {
+  box.addEventListener('click', function(){
+    box.classList.add("animation");
+    setTimeout(function() {
+      box.classList.remove("animation");
+    }, 1000)
+  });
+});
+*/
