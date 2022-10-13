@@ -13,3 +13,28 @@ body{
 h1{
   font-size: 6rem;
 }
+
+.box{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  margin: 14px;
+  width: 12%;
+  aspect-ratio: 1/1;
+  background-color: var(--clr-secondary);
+}
+
+.box.bg-ter{
+  background-color: var(--clr-tertiary);
+}
+
+.box.bg-qua{
+  background-color: var(--clr-quaternary);
+}
+
+.box.bg-qui{
+  background-color: var(--clr-quinary);
+}
