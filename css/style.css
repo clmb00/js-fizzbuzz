@@ -1,0 +1,15 @@
+:root {
+  --clr-primary: #264653;
+  --clr-secondary: #2a9d8f;
+  --clr-tertiary: #e9c46a;
+  --clr-quaternary: #f4a261;
+  --clr-quinary: #e76f51;
+}
+
+body{
+  background-color: var(--clr-primary);
+}
+
+h1{
+  font-size: 6rem;
+}
